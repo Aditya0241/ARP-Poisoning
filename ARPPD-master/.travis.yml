@@ -1,0 +1,9 @@
+language: c
+sudo: required
+script:
+  - ./compile_arppd_linux
+addons:
+  apt:
+    packages:
+    - arptables
+    - libpcap-dev
